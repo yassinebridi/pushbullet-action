@@ -1,6 +1,6 @@
 FROM alpine
 
-LABEL "version"="0.1.0"
+LABEL "version"="1.0.2"
 LABEL "repository"="https://github.com/yassinebridi/pushbullet-action"
 LABEL "homepage"="https://github.com/yassinebridi/pushbullet-action"
 LABEL "maintainer"="Yassine Bridi <yassine@yasbr.com>"
