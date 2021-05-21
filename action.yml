@@ -1,0 +1,31 @@
+name: "Pushbullet Github Action"
+branding:
+  icon: "upload-cloud"
+  color: "green"
+description: "Send a notification to Pushbullet."
+author: "Yassine Bridi <yassine@yasbr.com>"
+inputs:
+  PB_TOKEN:
+    required: true
+    description: "The Pushbullet API token"
+  PB_TYPE:
+    required: true
+    description: "Notification's type, it can be either 'note' or 'link' or 'file'"
+  PB_TITLE:
+    required: false
+    description: "Notification's title in case the type is 'note' or 'link'"
+  PB_BODY:
+    required: false
+    description: "Notification's body"
+  PB_FILE_NAME:
+    required: false
+    description: "Notification's file name in case the notifications' type is 'file'"
+  PB_FILE_TYPE:
+    required: false
+    description: "Notification's file type in case the notifications' type is 'file'"
+  PB_FILE_URL:
+    required: false
+    description: "Notification's file url in case the notifications' type is 'file'"
+runs:
+  using: "docker"
+  image: "Dockerfile"
