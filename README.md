@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Pushbullet Notification
-        uses: yassinebridi/pushbullet-action@v1.0.0
+        uses: yassinebridi/pushbullet-action@v1.0.2
         env:
           PB_TOKEN: ${{ secrets.PB_TOKEN }}
           PB_TYPE: note
@@ -56,7 +56,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Pushbullet Notification
-        uses: yassinebridi/pushbullet-action@v1.0.0
+        uses: yassinebridi/pushbullet-action@v1.0.2
         env:
           PB_TOKEN: ${{ secrets.PB_TOKEN }}
           PB_TYPE: link
@@ -77,7 +77,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Pushbullet Notification
-        uses: yassinebridi/pushbullet-action@v1.0.0
+        uses: yassinebridi/pushbullet-action@v1.0.2
         env:
           PB_TOKEN: ${{ secrets.PB_TOKEN }}
           PB_TYPE: file
